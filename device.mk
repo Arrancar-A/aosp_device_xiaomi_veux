@@ -485,3 +485,6 @@ PRODUCT_BOOT_JARS += \
 
 # Inherit from proprietary targets
 $(call inherit-product, vendor/xiaomi/veux/veux-vendor.mk)
+
+# Include private signing keys if present
+-include vendor/lineage-priv/keys/keys.mk 
